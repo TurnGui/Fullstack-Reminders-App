@@ -1,0 +1,28 @@
+{
+  "name": "fullstack-reminders-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "node --env-file=.env --watch src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/TurnGui/Fullstack-Reminders-App.git"
+  },
+  "keywords": [
+    "fullstack"
+  ],
+  "author": "TurnGui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TurnGui/Fullstack-Reminders-App/issues"
+  },
+  "homepage": "https://github.com/TurnGui/Fullstack-Reminders-App#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
+  }
+}

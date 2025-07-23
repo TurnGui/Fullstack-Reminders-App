@@ -5,7 +5,6 @@ const router = Router();
 
 router.get('/', ReminderController.getAllReminders);
 
-
 router.get('/:id', ReminderController.getReminderByID);
 
 router.post('/', ReminderController.createReminder);

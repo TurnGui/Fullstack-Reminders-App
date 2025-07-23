@@ -1,22 +1,34 @@
+import { ReminderService } from "../services/remindersService.js";
+
 export const ReminderController = {
   async getAllReminders(req, res) {
-    res.send('Get all reminders');
+    try {
+      const reminders = ReminderService.getAllReminders();
+      res.status(200).json(reminders);
+    } catch (error) {
+      res.status(500).json({ error: 'Failed to fetch reminders' });
+    }
   },
 
   async getReminderByID(req, res) {
-    res.send('Get reminder by ID');
+    const reminderId = parseInt(req.params.id)
+    res.send(`Get reminder by ID: ${reminderId}`);
   },
 
   async createReminder(req, res) {
-  res.send('Create a new reminder')
+    const reminder = req.body.reminder;
+    console.log(req.body)
+    res.send(reminder)
   },
 
   async updateReminder(req, res) {
-  res.send('Update old reminder')
+    const reminderId = parseInt(req.params.id)
+    res.send('Update old reminder')
   },
 
   async deleteReminder(req, res) {
-  res.send('Delete old reminder')
+    const reminderId = parseInt(req.params.id)
+    res.send('Delete old reminder')
   },
 
 }

@@ -11,6 +11,6 @@ A functional clone of Apple Reminders built with modern web technologies:
 
 ## Purpose  
 🔍 Built to demonstrate fullstack proficiency for internship applications.  
-02:08:03
+02:36:25
 npm run dev
 Still in dev
